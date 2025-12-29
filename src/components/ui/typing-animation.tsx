@@ -1,0 +1,46 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
+
+interface TypingAnimationProps {
+  text: string;
+  duration?: number;
+  className?: string;
+}
+
+export default function TypingAnimation({
+  text,
+  duration = 200,
+  className,
+}: TypingAnimationProps) {
+  const [displayedText, setDisplayedText] = useState<string>("");
+  const [i, setI] = useState<number>(0);
+
+  useEffect(() => {
+    const typingEffect = setInterval(() => {
+      if (i < text.length) {
+        setDisplayedText((prevState) => prevState + text.charAt(i));
+        setI(i + 1);
+      } else {
+        clearInterval(typingEffect);
+      }
+    }, duration);
+
+    return () => {
+      clearInterval(typingEffect);
+    };
+  }, [duration, i, text]);
+
+  return (
+    <h1
+      className={cn(
+        // Added 'after:hidden' and 'border-none' to force remove any cursors
+        "font-display font-bold drop-shadow-sm leading-20 tracking-[-0.02em] border-none after:hidden after:content-none",
+        className,
+      )}
+    >
+      {displayedText}
+    </h1>
+  );
+}
