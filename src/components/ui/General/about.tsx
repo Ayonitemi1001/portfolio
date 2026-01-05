@@ -1,7 +1,8 @@
 import React from 'react'
 import { data } from '@/lib/data'
 import { Card } from '../card'
-import { BiMessageSquareDetail } from "react-icons/bi";
+import { BiMessageSquareDetail } from "react-icons/bi"
+import FloatIn from '../floatIn'
 
 export default function About() {
   return (
@@ -12,16 +13,20 @@ export default function About() {
                     </div>
 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mb-5'>
-                        {data.map((about) => (
-                            <Card 
-                                className='bg-cyan-950 h-55 w-40 p-7 mx-auto text-white rounded-4xl flex flex-col items-center justify-center gap-3 transition-colors hover:bg-transparent border-transparent border hover:border-[#1e86b9] space-y-5'
-                                key={about.id}
+                        {data.map((about, index) => (
+                            <FloatIn 
+                                key={about.id} 
+                                delay={index * 0.4}
                             >
-                                <div className='text-cyan-400'>{about.icon}</div>
-                                
-                                <div className='font-semibold'>{about.title}</div>
-                                <div className='text-xs text-gray-300 text-center'>{about.description}</div>
-                            </Card>
+                                <Card 
+                                    className='bg-cyan-950 h-55 w-40 p-7 mx-auto text-white rounded-4xl flex flex-col items-center justify-center gap-3 transition-colors hover:bg-transparent border-transparent border hover:border-[#1e86b9] space-y-5'
+                                >
+                                    <div className='text-cyan-400'>{about.icon}</div>
+                                    
+                                    <div className='font-semibold'>{about.title}</div>
+                                    <div className='text-xs text-gray-300 text-center'>{about.description}</div>
+                                </Card>
+                            </FloatIn>
                         ))}
                     </div>
 
