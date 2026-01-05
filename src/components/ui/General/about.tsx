@@ -38,7 +38,7 @@ export default function About() {
                     I have a strong command of HTML, CSS, <span className="text-cyan-400 font-semibold">Tailwind CSS</span>, and version control with <span className="text-cyan-400 font-semibold">Git</span>. I can work independently but also thrive as a team player, always eager to learn new technologies.
                 </p>
                 <p>
-                    My career goal is to continuously strive for excellence and contribute meaningfully to the growth of any organization I join. I value structure and clean workflows. Outside of coding, I enjoy reading and playing football.
+                    My career goal is to continuously strive for excellence and contribute meaningfully to the growth of any organization I join. I value structure and clean workflows. Outside of coding, I enjoy listening to music and playing football.
                 </p>
             </div>
 
