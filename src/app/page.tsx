@@ -79,7 +79,6 @@ export default function Portfolio() {
       {/* We wrap the content in a relative div so it sits ON TOP of the fixed background */}
       <div className='relative z-10'>
           <Herosection/>
-          <Photo/>
           <About/>
           <Experience/>
           <Service/>
