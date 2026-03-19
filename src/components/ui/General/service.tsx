@@ -15,7 +15,7 @@ export default function Service() {
                 What I Offer
             </h2>
             <h1 className='text-cyan-500 font-bold text-2xl md:text-2xl'>
-                My Services
+                Expertise & Solutions
             </h1>
         </div>
 

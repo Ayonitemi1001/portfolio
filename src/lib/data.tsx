@@ -3,7 +3,6 @@ import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 import { BsPatchCheckFill } from 'react-icons/bs';
-
 export interface AboutData {
     id: number;
     title: string;
@@ -65,6 +64,11 @@ export const ex: ExperienceData[] = [
       level: 'Intermediate', 
       icon: <BsPatchCheckFill className="text-cyan-400 mt-1.5 text-sm" />  
     },
+     { id:6, 
+      title: 'TypeScript', 
+      level: 'Intermediate', 
+      icon: <BsPatchCheckFill className="text-cyan-400 mt-1.5 text-sm" />  
+    }
 ];
 
 export interface ProjectData {
@@ -107,19 +111,20 @@ export interface ServiceData {
 export const services: ServiceData[] = [
   {
     title: "Frontend Development",
-    description: "Building fast, interactive web applications using React and Next.js.",
+    description: "Developing high-performance web apps with a focus on real-time data and security.",
     items: [
       "Single Page Applications (SPA)",
-      "Next.js Implementation",
-      "Reusable Component Architecture",
-      "Client-side Routing"
+      "Performance-optimized Next.js Apps (SSR/ISR)",
+      "Scalable Component Systems",
+      "State-Driven Navigation & Performance Optimization",
+      "Security-First UI"
     ]
   },
   {
-    title: "Responsive UI Implementation",
-    description: "Translating designs into pixel-perfect, mobile-responsive code.",
+    title: "User-Centric Design Systems",
+    description: "Transforming designs into pixel-perfect, responsive interfaces with a focus on user experience.",
     items: [
-      "Tailwind CSS Styling",
+      "Rapid Prototyping with Tailwind & Framer Motion",
       "Mobile-First Approach",
       "Interactive Animations"
     ]
