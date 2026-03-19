@@ -1,29 +1,27 @@
-import React from 'react';
-import { services } from '@/lib/data';
-import { Card, CardContent } from '@/components/ui/card';
+import React from "react";
+import { services } from "@/lib/data";
+import { Card, CardContent } from "@/components/ui/Design System/card";
 
 export default function Service() {
   return (
-    <section id='service' className="py-20 px-6">
-      
+    <section id="service" className="py-20 px-6">
       {/* Main Container */}
       <div className="max-w-6xl mx-auto flex flex-col items-center">
-        
         {/* Header */}
-        <div className='flex flex-col space-y-2 mb-16 text-center'>
-            <h2 className='text-gray-400 text-sm font-bold tracking-wider'>
-                What I Offer
-            </h2>
-            <h1 className='text-cyan-500 font-bold text-2xl md:text-2xl'>
-                Expertise & Solutions
-            </h1>
+        <div className="flex flex-col space-y-2 mb-16 text-center">
+          <h2 className="text-gray-400 text-sm font-bold tracking-wider">
+            What I Offer
+          </h2>
+          <h1 className="text-cyan-500 font-bold text-2xl md:text-2xl">
+            Expertise & Solutions
+          </h1>
         </div>
 
         {/* Cards Wrapper */}
         <div className="flex flex-wrap justify-center gap-8 w-full">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="relative flex-1 min-w-75 max-w-sm bg-blue-900/10 rounded-2xl border border-blue-500/20 overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300 group p-0"
             >
               {/* Header Curve Effect */}
@@ -38,7 +36,7 @@ export default function Service() {
                 <p className="text-sm mb-6 text-center text-gray-400 h-10">
                   {service.description}
                 </p>
-                
+
                 {/* Divider Line */}
                 <div className="border-t border-blue-500/30 mb-6"></div>
 
@@ -55,7 +53,6 @@ export default function Service() {
             </Card>
           ))}
         </div>
-
       </div>
     </section>
   );
