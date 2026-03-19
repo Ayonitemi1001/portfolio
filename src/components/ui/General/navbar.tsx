@@ -40,12 +40,12 @@ export default function Navbar() {
           <BiUser className="w-5 h-5" />
         </NavItem>
 
-        <NavItem href="#projects" isActive={activeSection === 'projects'}>
-          <BiBriefcase className="w-5 h-5" />
-        </NavItem>
-
         <NavItem href="#service" isActive={activeSection === 'service'}>
            <BiCodeAlt className="w-5 h-5" />
+        </NavItem>
+       
+        <NavItem href="#projects" isActive={activeSection === 'projects'}>
+          <BiBriefcase className="w-5 h-5" />
         </NavItem>
 
         <NavItem href="#contact" isActive={activeSection === 'contact'}>
