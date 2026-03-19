@@ -6,7 +6,7 @@ import FloatIn from '../floatIn'
 
 export default function About() {
   return (
-    <div id='about' className='relative z-10 flex flex-col justify-center items-center mt-20 md:mt-40'>
+    <section id='about' className='relative z-10 flex flex-col justify-center items-center mt-20 md:mt-40'>
                     <div className='flex flex-col space-y-2 mb-10 text-center'>
                         <h2 className='text-gray-500 text-sm font-bold tracking-wide ml-3'>Get to know</h2>
                         <h1 className='text-cyan-600 font-bold text-2xl'>About me</h1>
@@ -51,6 +51,6 @@ export default function About() {
                     <BiMessageSquareDetail className="text-lg md:text-xl group-hover:scale-110 transition-transform" />
                 </a>
             </div>
-    </div>
+    </section>
   )
 }

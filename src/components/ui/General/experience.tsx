@@ -1,5 +1,6 @@
 import React from 'react'
-import { ex } from '@/lib/ex'
+import { ex } from '@/lib/data'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 export default function Experience() {
   return (
@@ -12,7 +13,7 @@ export default function Experience() {
         </div>
 
        {/* Card Container */}
-       <div className="
+       <Card className="
         w-full max-w-sm sm:w-104 sm:max-w-none
         bg-cyan-950 
         rounded-[2rem] sm:rounded-[2.5rem] 
@@ -23,12 +24,14 @@ export default function Experience() {
         cursor-default
       ">
         {/* Title */}
-        <h2 className="text-center text-cyan-400 text-lg sm:text-xl font-medium mb-8 sm:mb-10">
-          Frontend Development
-        </h2>
+        <CardHeader className="p-0 border-b-0">
+          <CardTitle className="text-center text-cyan-400 text-lg sm:text-xl font-medium mb-8 sm:mb-10">
+            Frontend Development
+          </CardTitle>
+        </CardHeader>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-2 gap-y-6 gap-x-4 sm:gap-x-6">
+        <CardContent className="p-0 grid grid-cols-2 gap-y-6 gap-x-4 sm:gap-x-6">
           {ex.map((exep) => (
             <div key={exep.id} className="flex items-start gap-3">
               <div className="mt-1 text-cyan-400">
@@ -45,8 +48,8 @@ export default function Experience() {
               </div>
             </div>
           ))}
-        </div>
-      </div>
+        </CardContent>
+      </Card>
 
     </section>
   )

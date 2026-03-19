@@ -4,8 +4,7 @@ import TypingAnimation from "@/components/ui/typing-animation"
 
 export default function HeroSection() {
   return (
-    // 2. Apply the font className to the wrapper
-    <div id='herosection' className='relative z-10 flex h-full items-center justify-center mt-30'>
+    <section id='herosection' className='relative z-10 flex h-full items-center justify-center mt-30'>
       
       <div className='flex flex-col items-center text-center text-white space-y-4'>
         
@@ -35,6 +34,6 @@ export default function HeroSection() {
       </div>
       
       
-    </div>
+    </section>
   )
 }
