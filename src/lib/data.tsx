@@ -99,6 +99,15 @@ export const projectData: ProjectData[] = [
     tech: ["React", "Tailwind CSS", "NextJS", "TypeScript"],
     githubLink: "https://github.com/Ayonitemi1001/vigil",
     demoLink: "https://vigil-virid.vercel.app/",
+  },
+   {
+    id: 3,
+    title: "FlowState",
+    description: "Flowstate is a modern, fast, and intuitive Kanban board application designed to help you organize tasks, manage projects, and achieve your flow state. Built with performance and a fluid user experience in mind.",
+    image: "/flowstate.png",
+    tech: ["React", "Tailwind CSS", "NextJS", "TypeScript"],
+    githubLink: "https://github.com/Ayonitemi1001/flowstate",
+    demoLink: "https://flowstate-lac-five.vercel.app/",
   }
 ];
 
