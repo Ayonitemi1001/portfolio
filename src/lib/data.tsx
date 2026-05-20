@@ -115,7 +115,7 @@ export const projectData: ProjectData[] = [
     description: "A professional web platform for HOGC.",
     image: "/hogcproject.png",
     tech: ["Next.js", "Tailwind CSS"],
-    githubLink: "#",
+    githubLink: "https://github.com/Ayonitemi1001/heritage",
     demoLink: "https://hogc.com.ng",
   }
 ];
