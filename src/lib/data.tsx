@@ -108,6 +108,15 @@ export const projectData: ProjectData[] = [
     tech: ["React", "Tailwind CSS", "NextJS", "TypeScript"],
     githubLink: "https://github.com/Ayonitemi1001/flowstate",
     demoLink: "https://flowstate-lac-five.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "HOGC",
+    description: "A professional web platform for HOGC.",
+    image: "/hogcproject.png",
+    tech: ["Next.js", "Tailwind CSS"],
+    githubLink: "#",
+    demoLink: "https://hogc.com.ng",
   }
 ];
 
