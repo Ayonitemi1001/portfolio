@@ -1,26 +1,25 @@
 // components/ContactSection.jsx
-import React from 'react';
-import { contactMethods } from '@/lib/data';
+import React from "react";
+import { contactMethods } from "@/lib/data";
 export default function ContactSection() {
   return (
     <section className="py-20 px-6" id="contact">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
-        
         {/* Header */}
-        <div className='flex flex-col space-y-2 mb-16 text-center'>
-            <h2 className='text-gray-400 text-sm font-bold tracking-wider'>
-                Get in Touch
-            </h2>
-            <h1 className='text-cyan-600 font-bold text-2xl md:text-2xl'>
-                Contact Me
-            </h1>
+        <div className="flex flex-col space-y-2 mb-16 text-center">
+          <h2 className="text-gray-400 text-sm font-bold tracking-wider">
+            Get in Touch
+          </h2>
+          <h1 className="text-cyan-600 font-bold text-2xl md:text-2xl">
+            Contact Me
+          </h1>
         </div>
 
         {/* Contact Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
           {contactMethods.map((method, index) => (
-            <a 
-              key={index} 
+            <a
+              key={index}
               href={method.link}
               target="_blank"
               rel="noopener noreferrer"
@@ -37,9 +36,7 @@ export default function ContactSection() {
               </h3>
 
               {/* Content (Phone/Email text) */}
-              <p className="text-gray-300 font-medium mb-6">
-                {method.content}
-              </p>
+              <p className="text-gray-300 font-medium mb-6">{method.content}</p>
 
               {/* Action Link Text */}
               <span className="text-cyan-500 font-semibold text-sm group-hover:underline decoration-cyan-500 underline-offset-4">
@@ -48,7 +45,6 @@ export default function ContactSection() {
             </a>
           ))}
         </div>
-
       </div>
     </section>
   );

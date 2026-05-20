@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 export default function AnimatedBackground() {
-  const [particles, setParticles] = useState<{ id: number; top: number; left: number; duration: number; delay: number }[]>([]);
+  const [particles, setParticles] = useState<
+    { id: number; top: number; left: number; duration: number; delay: number }[]
+  >([]);
 
   useEffect(() => {
     // Defer state update by a tick to prevent the synchronous cascading render warning
@@ -18,7 +20,7 @@ export default function AnimatedBackground() {
       }));
       setParticles(generatedParticles);
     }, 0);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -38,7 +40,7 @@ export default function AnimatedBackground() {
           ease: "easeInOut",
         }}
       />
-      
+
       {/* Orb 2 - Middle Right */}
       <motion.div
         className="absolute top-[20%] right-[-10%] w-[70vw] h-[70vw] md:w-[50vw] md:h-[50vw] rounded-full bg-blue-700/20 blur-[100px] md:blur-[140px]"
@@ -68,7 +70,7 @@ export default function AnimatedBackground() {
           ease: "easeInOut",
         }}
       />
-      
+
       {/* Tiny floating particles (stars/dust) */}
       {particles.map((particle) => (
         <motion.div
@@ -82,7 +84,7 @@ export default function AnimatedBackground() {
             y: ["0px", "-80px", "0px"],
             x: ["0px", "30px", "0px"],
             opacity: [0.1, 0.7, 0.1],
-            scale: [0.8, 1.5, 0.8]
+            scale: [0.8, 1.5, 0.8],
           }}
           transition={{
             duration: particle.duration,
