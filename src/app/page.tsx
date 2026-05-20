@@ -11,6 +11,7 @@ import Projects from '@/components/ui/General/projects'
 import Contacts from '@/components/ui/General/contacts'
 import Footer from '@/components/ui/General/footer'
 import NavBar from '@/components/ui/General/navbar'
+import AnimatedBackground from '@/components/ui/Design System/animated-background'
 
 
 
@@ -25,15 +26,16 @@ const roboto = Roboto({
 export default function Portfolio() {
   return (
     <div className={`relative min-h-screen w-full ${roboto.className}`}>
-        <div className="fixed inset-0 z-0">
+        <div className="fixed inset-0 z-0 bg-slate-950">
          <Image 
            src={bgImage} 
            alt="Background"
            fill
-           className="object-cover object-[65%] md:object-center"
+           className="object-cover object-[65%] md:object-center opacity-50 mix-blend-luminosity"
            priority 
          />
-         <div className="absolute inset-0 bg-slate-900/50"></div> 
+         <div className="absolute inset-0 bg-slate-950/70"></div> 
+         <AnimatedBackground />
       </div>
 
       <div className='relative z-10'>
