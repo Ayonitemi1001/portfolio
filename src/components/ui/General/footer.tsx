@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link'; 
+import FloatIn from '../Design System/floatIn'; 
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,39 +10,47 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col items-center">
         
         {/* 1. Logo / Brand Name */}
-        <div className="mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight hover:text-cyan-400 transition-colors duration-300 cursor-default">
-            Z@RO
-          </h2>
-        </div>
+        <FloatIn delay={0.1}>
+          <div className="mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight hover:text-cyan-400 transition-colors duration-300 cursor-default">
+              Z@RO
+            </h2>
+          </div>
+        </FloatIn>
 
         {/* 2. Navigation Links */}
-        <nav className="mb-10">
-          <ul className="flex flex-wrap justify-center gap-6 md:gap-10 text-gray-400 text-sm md:text-base font-medium">
-            {['Home', 'About', 'Experience', 'Service', 'Projects', 'Contact'].map((item) => (
-              <li key={item}>
-                <Link 
-                  href={`#${item.toLowerCase()}`} 
-                  className="hover:text-cyan-400 transition-colors duration-300"
-                >
-                  {item}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <FloatIn delay={0.2}>
+          <nav className="mb-10">
+            <ul className="flex flex-wrap justify-center gap-6 md:gap-10 text-gray-400 text-sm md:text-base font-medium">
+              {['Home', 'About', 'Experience', 'Service', 'Projects', 'Contact'].map((item) => (
+                <li key={item}>
+                  <Link 
+                    href={`#${item.toLowerCase()}`} 
+                    className="hover:text-cyan-400 transition-colors duration-300"
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </FloatIn>
 
         {/* 3. Social Media Icons */}
-        <div className="flex gap-4 mb-10">
-          <SocialLink href="https://x.com/Ayonitemi1001" icon={<TwitterIcon />} />
-          <SocialLink href="https://github.com/Ayonitemi1001" icon={<GithubIcon />} />
-          <SocialLink href="https://www.linkedin.com/in/ayonitemi-ogunniran-45362a3a2" icon={<LinkedinIcon />} />
-        </div>
+        <FloatIn delay={0.3}>
+          <div className="flex gap-4 mb-10">
+            <SocialLink href="https://x.com/Ayonitemi1001" icon={<TwitterIcon />} />
+            <SocialLink href="https://github.com/Ayonitemi1001" icon={<GithubIcon />} />
+            <SocialLink href="https://www.linkedin.com/in/ayonitemi-ogunniran-45362a3a2" icon={<LinkedinIcon />} />
+          </div>
+        </FloatIn>
 
         {/* 4. Copyright */}
-        <div className="text-gray-500 text-xs md:text-sm text-center">
-          <p>© {currentYear} Z@RO. All rights reserved.</p>
-        </div>
+        <FloatIn delay={0.4}>
+          <div className="text-gray-500 text-xs md:text-sm text-center">
+            <p>© {currentYear} Z@RO. All rights reserved.</p>
+          </div>
+        </FloatIn>
       </div>
     </footer>
   );

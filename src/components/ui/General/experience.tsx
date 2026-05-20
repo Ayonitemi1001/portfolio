@@ -1,5 +1,6 @@
 import React from "react";
 import { ex } from "@/lib/data";
+import FloatIn from "../Design System/floatIn";
 import {
   Card,
   CardContent,
@@ -14,14 +15,17 @@ export default function Experience() {
       className="relative z-10 flex flex-col justify-center items-center mt-20 px-4 sm:px-0"
     >
       {/* Header */}
-      <div className="flex flex-col space-y-2 mb-10 text-center">
-        <h2 className="text-gray-500 text-sm font-bold tracking-wide">
-          What Skills I have
-        </h2>
-        <h1 className="text-cyan-600 font-bold text-2xl">My Experience</h1>
-      </div>
+      <FloatIn delay={0.2}>
+        <div className="flex flex-col space-y-2 mb-10 text-center">
+          <h2 className="text-gray-500 text-sm font-bold tracking-wide">
+            What Skills I have
+          </h2>
+          <h1 className="text-cyan-600 font-bold text-2xl">My Experience</h1>
+        </div>
+      </FloatIn>
 
       {/* Card Container */}
+      <FloatIn delay={0.4}>
       <Card
         className="
         w-full max-w-sm sm:w-104 sm:max-w-none
@@ -59,6 +63,7 @@ export default function Experience() {
           ))}
         </CardContent>
       </Card>
+      </FloatIn>
     </section>
   );
 }

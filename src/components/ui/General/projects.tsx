@@ -8,26 +8,29 @@ import {
   CardDescription,
   CardFooter,
 } from "@/components/ui/Design System/card";
+import FloatIn from "../Design System/floatIn";
 
 export default function Projects() {
   return (
     <section id="projects" className="py-12 md:py-20 px-4 md:px-6">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         {/* Header */}
-        <div className="flex flex-col space-y-2 mb-12 md:mb-16 text-center">
-          <h2 className="text-gray-400 text-xs md:text-sm font-bold tracking-wider uppercase">
-            My Recent Work
-          </h2>
-          <h1 className="text-cyan-600 font-bold text-2xl md:text-2xl">
-            Projects
-          </h1>
-        </div>
+        <FloatIn delay={0.2}>
+          <div className="flex flex-col space-y-2 mb-12 md:mb-16 text-center">
+            <h2 className="text-gray-400 text-xs md:text-sm font-bold tracking-wider uppercase">
+              My Recent Work
+            </h2>
+            <h1 className="text-cyan-600 font-bold text-2xl md:text-2xl">
+              Projects
+            </h1>
+          </div>
+        </FloatIn>
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full">
-          {projectData.map((project) => (
+          {projectData.map((project, index) => (
+            <FloatIn key={project.id} delay={index * 0.2}>
             <Card
-              key={project.id}
               className="bg-white/5 backdrop-blur-lg p-5 rounded-3xl border border-white/10 hover:bg-white/10 hover:border-cyan-400/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.2)] hover:-translate-y-2 transition-all duration-500 group overflow-hidden w-full max-w-md mx-auto md:max-w-none md:mx-0 flex flex-col"
             >
               {/* Project Image Container */}
@@ -84,6 +87,7 @@ export default function Projects() {
                 </a>
               </CardFooter>
             </Card>
+            </FloatIn>
           ))}
         </div>
       </div>

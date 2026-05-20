@@ -1,6 +1,7 @@
 import React from "react";
 import { services } from "@/lib/data";
 import { Card, CardContent } from "@/components/ui/Design System/card";
+import FloatIn from "../Design System/floatIn";
 
 export default function Service() {
   return (
@@ -8,20 +9,22 @@ export default function Service() {
       {/* Main Container */}
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         {/* Header */}
-        <div className="flex flex-col space-y-2 mb-16 text-center">
-          <h2 className="text-gray-400 text-sm font-bold tracking-wider">
-            What I Offer
-          </h2>
-          <h1 className="text-cyan-500 font-bold text-2xl md:text-2xl">
-            Expertise & Solutions
-          </h1>
-        </div>
+        <FloatIn delay={0.2}>
+          <div className="flex flex-col space-y-2 mb-16 text-center">
+            <h2 className="text-gray-400 text-sm font-bold tracking-wider">
+              What I Offer
+            </h2>
+            <h1 className="text-cyan-500 font-bold text-2xl md:text-2xl">
+              Expertise & Solutions
+            </h1>
+          </div>
+        </FloatIn>
 
         {/* Cards Wrapper */}
         <div className="flex flex-wrap justify-center gap-8 w-full">
           {services.map((service, index) => (
+            <FloatIn key={index} delay={index * 0.2}>
             <Card
-              key={index}
               className="relative flex-1 min-w-75 max-w-sm bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden shadow-lg hover:shadow-[0_0_30px_rgba(6,182,212,0.2)] hover:border-cyan-400/40 hover:bg-white/10 hover:-translate-y-2 transition-all duration-500 group p-0"
             >
               {/* Header Curve Effect */}
@@ -51,6 +54,7 @@ export default function Service() {
                 </ul>
               </CardContent>
             </Card>
+            </FloatIn>
           ))}
         </div>
       </div>
