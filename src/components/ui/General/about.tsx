@@ -20,7 +20,7 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-5">
         {data.map((about, index) => (
           <FloatIn key={about.id} delay={index * 0.4}>
-            <Card className="bg-cyan-950 h-55 w-40 p-7 mx-auto text-white rounded-4xl flex flex-col items-center justify-center gap-3 transition-colors hover:bg-transparent border-transparent border hover:border-[#1e86b9] space-y-5">
+            <Card className="bg-white/5 backdrop-blur-md h-55 w-40 p-7 mx-auto text-white rounded-4xl flex flex-col items-center justify-center gap-3 transition-all duration-500 border border-white/10 hover:bg-white/10 hover:border-cyan-400/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.2)] hover:-translate-y-2 space-y-5 group">
               <div className="text-cyan-400">{about.icon}</div>
 
               <div className="font-semibold">{about.title}</div>

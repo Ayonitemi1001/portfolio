@@ -22,10 +22,10 @@ export default function Service() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="relative flex-1 min-w-75 max-w-sm bg-blue-900/10 rounded-2xl border border-blue-500/20 overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300 group p-0"
+              className="relative flex-1 min-w-75 max-w-sm bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden shadow-lg hover:shadow-[0_0_30px_rgba(6,182,212,0.2)] hover:border-cyan-400/40 hover:bg-white/10 hover:-translate-y-2 transition-all duration-500 group p-0"
             >
               {/* Header Curve Effect */}
-              <div className="bg-cyan-950 h-28 rounded-b-[50%] flex items-center justify-center mb-6 group-hover:bg-cyan-900 transition-colors duration-300">
+              <div className="bg-black/40 h-28 rounded-b-[50%] flex items-center justify-center mb-6 group-hover:bg-cyan-900/60 transition-colors duration-500">
                 <h3 className="text-xl font-bold text-white relative -top-3 px-4 text-center">
                   {service.title}
                 </h3>

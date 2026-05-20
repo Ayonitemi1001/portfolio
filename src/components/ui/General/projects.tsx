@@ -28,7 +28,7 @@ export default function Projects() {
           {projectData.map((project) => (
             <Card
               key={project.id}
-              className="bg-cyan-950 p-5 rounded-3xl border border-blue-500/10 hover:border-cyan-700/50 transition-all duration-300 shadow-xl group overflow-hidden w-full max-w-md mx-auto md:max-w-none md:mx-0 flex flex-col"
+              className="bg-white/5 backdrop-blur-lg p-5 rounded-3xl border border-white/10 hover:bg-white/10 hover:border-cyan-400/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.2)] hover:-translate-y-2 transition-all duration-500 group overflow-hidden w-full max-w-md mx-auto md:max-w-none md:mx-0 flex flex-col"
             >
               {/* Project Image Container */}
               <div className="rounded-2xl overflow-hidden mb-6 relative h-48 md:h-52 w-full shrink-0">
@@ -69,7 +69,7 @@ export default function Projects() {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 px-3 md:px-4 py-2 md:py-3 rounded-xl border-2 border-white text-white font-semibold text-sm md:text-base text-center hover:bg-cyan-950/50 transition-colors duration-300"
+                  className="flex-1 px-3 md:px-4 py-2 md:py-3 rounded-xl border-2 border-white/20 text-white font-semibold text-sm md:text-base text-center hover:bg-white/10 hover:border-white transition-all duration-300"
                 >
                   Github
                 </a>
@@ -78,7 +78,7 @@ export default function Projects() {
                   href={project.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 px-3 md:px-4 py-2 md:py-3 rounded-xl bg-cyan-600 text-white font-semibold text-sm md:text-base text-center hover:bg-cyan-500 transition-colors duration-300 shadow-lg shadow-cyan-500/20"
+                  className="flex-1 px-3 md:px-4 py-2 md:py-3 rounded-xl bg-cyan-600/80 backdrop-blur-md border border-cyan-400/50 text-white font-semibold text-sm md:text-base text-center hover:bg-cyan-500 hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all duration-300"
                 >
                   Live Demo
                 </a>

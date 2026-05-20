@@ -23,7 +23,7 @@ export default function HeroSection() {
         <a
           href="/cv.pdf"
           download="Ayonitemi_CV.pdf"
-          className="inline-block bg-transparent border-2 border-[#1e86b9] text-[#4a6d7e] hover:bg-white hover:text-gray-900 hover:border-transparent rounded-lg px-8 py-4 text-md tracking-wide cursor-pointer transition-all duration-300"
+          className="relative inline-flex items-center justify-center bg-white/5 backdrop-blur-md border border-cyan-500/50 text-cyan-300 rounded-full px-8 py-4 text-md font-medium tracking-wide cursor-pointer transition-all duration-500 hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_40px_rgba(6,182,212,0.6)] hover:-translate-y-1"
         >
           Download CV
         </a>

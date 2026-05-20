@@ -24,7 +24,7 @@ export default function ContactSection() {
               href={method.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-cyan-950 p-8 rounded-3xl border border-blue-500/10 hover:border-cyan-500/50 hover:bg-cyan-700/50 hover:-translate-y-2 transition-all duration-300 shadow-lg group flex flex-col items-center text-center cursor-pointer"
+              className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:border-cyan-400/50 hover:bg-white/10 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(6,182,212,0.2)] transition-all duration-500 group flex flex-col items-center text-center cursor-pointer"
             >
               {/* Icon */}
               <div className="mb-4 text-white group-hover:text-cyan-400 transition-colors duration-300">

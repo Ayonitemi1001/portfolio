@@ -25,12 +25,12 @@ export default function Experience() {
       <Card
         className="
         w-full max-w-sm sm:w-104 sm:max-w-none
-        bg-cyan-950 
+        bg-white/5 backdrop-blur-xl
         rounded-[2rem] sm:rounded-[2.5rem] 
         p-6 sm:p-8 
-        border border-transparent 
-        hover:bg-transparent hover:border-[#4db5ff] 
-        transition-all duration-300 ease-in-out
+        border border-white/10
+        hover:bg-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_40px_rgba(6,182,212,0.15)]
+        transition-all duration-500 ease-out
         cursor-default
       "
       >

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Roboto } from 'next/font/google'
+import { Outfit } from 'next/font/google'
+import CustomCursor from '@/components/ui/Design System/cursor'
 import Image from 'next/image'
 import bgImage from '../../public/portfoliobackground.jpg'
 import Herosection from '@/components/ui/General/herosection'
@@ -18,14 +19,15 @@ import AnimatedBackground from '@/components/ui/Design System/animated-backgroun
 
 
 
-const roboto = Roboto({
+const outfit = Outfit({
   subsets: ['latin'],
-  weight: ['400', '500', '700'], 
+  weight: ['300', '400', '500', '600', '700'], 
 })
 
 export default function Portfolio() {
   return (
-    <div className={`relative min-h-screen w-full ${roboto.className}`}>
+    <div className={`relative min-h-screen w-full ${outfit.className}`}>
+        <CustomCursor />
         <div className="fixed inset-0 z-0 bg-slate-950">
          <Image 
            src={bgImage} 
