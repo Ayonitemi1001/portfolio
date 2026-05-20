@@ -15,19 +15,19 @@ export const data: AboutData[] = [
     id: 1,
     title: "Experience",
     icon: <FaAward className="text-2xl" />,
-    description: "7 months working",
+    description: "9 months working",
   },
   {
     id: 2,
     title: "Clients",
     icon: <FiUsers className="text-2xl" />,
-    description: "2 clients worked with",
+    description: "5 clients worked with",
   },
   {
     id: 3,
     title: "Projects",
     icon: <VscFolderLibrary className="text-2xl" />,
-    description: "3 projects completed",
+    description: "4 projects completed",
   },
 ];
 
