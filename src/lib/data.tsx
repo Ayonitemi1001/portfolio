@@ -27,7 +27,7 @@ export const data: AboutData[] = [
     id: 3,
     title: "Projects",
     icon: <VscFolderLibrary className="text-2xl" />,
-    description: "4 projects completed",
+    description: "5 projects completed",
   },
 ];
 
@@ -83,7 +83,6 @@ export interface ProjectData {
   description: string;
   image: string;
   tech: string[];
-  githubLink: string;
   demoLink: string;
 }
 
@@ -94,7 +93,6 @@ export const projectData: ProjectData[] = [
     description: "A responsive landing page.",
     image: "/ajaeqproject.png",
     tech: ["React", "Tailwind CSS", "NextJS"],
-    githubLink: "https://github.com/Ayonitemi1001/cyber-app",
     demoLink: "https://cyber-app-one.vercel.app/",
   },
   {
@@ -104,7 +102,6 @@ export const projectData: ProjectData[] = [
       "A real-time API health and security monitoring dashboard built for developers.",
     image: "/vigilProject.png",
     tech: ["React", "Tailwind CSS", "NextJS", "TypeScript"],
-    githubLink: "https://github.com/Ayonitemi1001/vigil",
     demoLink: "https://vigil-virid.vercel.app/",
   },
   {
@@ -114,7 +111,6 @@ export const projectData: ProjectData[] = [
       "Flowstate is a modern, fast, and intuitive Kanban board application designed to help you organize tasks, manage projects, and achieve your flow state. Built with performance and a fluid user experience in mind.",
     image: "/flowstate.png",
     tech: ["React", "Tailwind CSS", "NextJS", "TypeScript"],
-    githubLink: "https://github.com/Ayonitemi1001/flowstate",
     demoLink: "https://flowstate-lac-five.vercel.app/",
   },
   {
@@ -123,8 +119,16 @@ export const projectData: ProjectData[] = [
     description: "A professional web platform for HOGC.",
     image: "/hogcproject.png",
     tech: ["Next.js", "Tailwind CSS"],
-    githubLink: "https://github.com/Ayonitemi1001/heritage",
     demoLink: "https://hogc.com.ng",
+  },
+  {
+    id: 5,
+    title: "ApexKits",
+    description:
+      "A premium, futuristic athletic gear experience featuring customizable sports kits with dynamic interactive labs and a high-performance spec catalog.",
+    image: "/apexkits.png",
+    tech: ["React", "Tailwind CSS", "NextJS", "TypeScript"],
+    demoLink: "https://apexkits.vercel.app/",
   },
 ];
 
