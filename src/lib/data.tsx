@@ -117,7 +117,7 @@ export const projectData: ProjectData[] = [
     id: 4,
     title: "HOGC",
     description: "A professional web platform for HOGC.",
-    image: "/hogcproject.png",
+    image: "/hogcproject.jpg",
     tech: ["Next.js", "Tailwind CSS"],
     demoLink: "https://hogc.com.ng",
   },
@@ -135,7 +135,7 @@ export const projectData: ProjectData[] = [
     title: "Cecilia Kanyinsola — SMM Portfolio",
     description:
       "A premium, elegant portfolio website for a Social Media Manager and Digital Marketer, highlighting content strategy, analytics, and operational support.",
-    image: "/cecilia.png",
+    image: "/cecilia.jpg",
     tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
     demoLink: "https://cece-portfolio.vercel.app/",
   },
