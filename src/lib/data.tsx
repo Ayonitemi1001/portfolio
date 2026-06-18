@@ -130,6 +130,15 @@ export const projectData: ProjectData[] = [
     tech: ["React", "Tailwind CSS", "NextJS", "TypeScript"],
     demoLink: "https://apexkits.vercel.app/",
   },
+  {
+    id: 6,
+    title: "Cecilia Kanyinsola — SMM Portfolio",
+    description:
+      "A premium, elegant portfolio website for a Social Media Manager and Digital Marketer, highlighting content strategy, analytics, and operational support.",
+    image: "/cecilia.png",
+    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
+    demoLink: "https://cece-portfolio.vercel.app/",
+  },
 ];
 
 export interface ServiceData {
