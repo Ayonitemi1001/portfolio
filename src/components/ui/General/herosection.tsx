@@ -29,7 +29,7 @@ export default function HeroSection() {
         />
 
         <motion.a
-          href="/cv.pdf"
+          href="/AYONITEMI OGUNNIRAN.docx.pdf"
           download="Ayonitemi_CV.pdf"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
