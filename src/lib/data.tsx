@@ -115,11 +115,11 @@ export const projectData: ProjectData[] = [
   },
   {
     id: 4,
-    title: "HOGC",
-    description: "A professional web platform for HOGC.",
-    image: "/hogcproject.jpg",
-    tech: ["Next.js", "Tailwind CSS"],
-    demoLink: "https://hogc.com.ng",
+    title: "SUMMIT",
+    description: "A professional web platform for for a real estate company.",
+    image: "/summit.png",
+    tech: ["React", "Next.js", "Tailwind CSS"],
+    demoLink: "https://summit-liard.vercel.app/",
   },
   {
     id: 5,
