@@ -15,7 +15,7 @@ export const data: AboutData[] = [
     id: 1,
     title: "Experience",
     icon: <FaAward className="text-2xl" />,
-    description: "9 months working",
+    description: "18 months working",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const data: AboutData[] = [
     id: 3,
     title: "Projects",
     icon: <VscFolderLibrary className="text-2xl" />,
-    description: "5 projects completed",
+    description: "8 projects completed",
   },
 ];
 
